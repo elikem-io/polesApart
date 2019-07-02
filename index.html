@@ -14,20 +14,27 @@
         <div id="branding">logo</div>
         <form action="">
             <label for="gender">Gender:</label>
-            <select name="" id="">
-                <option value="">male</option>
-                <option value="">female</option>
+            <select name="" id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="mixed">mixed</option>
             </select>
             
-            <label for="gender">Race:</label>
-            <select name="" id="">
-                <option value="">Caucassian</option>
-                <option value="">African-american</option>
+            <label for="race">Race:</label>
+            <select name="" id="race">
+                <option value="caucassian">Caucassian</option>
+                <option value="african-american">African-american</option>
             </select>
-            <label for="age">Age-range from:</label>
-            <input type="text"> 
+           <!--
+               <label for="age">Age-range from:</label>
+            <input type="text" id="ageFrom"> 
             <label for="">to:</label>
              <input type="text">
+           --> 
+
+           
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <button id="submit">Go!</button>
         </form>
     </header>
     <section id="user-profile">
@@ -93,5 +100,6 @@
                  
             </div>
           </div>
+    <script src="app.js"></script>
 </body>
 </html>
